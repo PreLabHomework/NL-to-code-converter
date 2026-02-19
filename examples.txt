@@ -1,0 +1,25 @@
+# Copy/Paste Examples
+
+# Loops
+can i have a for loop that loops around 5 times
+make a loop that repeats 3 times
+
+# Variables
+set x to 10
+make total equal 25
+
+# Print
+print "hello"
+show x
+
+# Class
+create a class named Person with attributes name and age
+
+# File write
+write "Hello, world!" into a file called output.txt
+
+# Try open file
+try to open a file named data.txt, if it fails print "Error opening file"
+
+# Nested loops
+for each row in matrix, for each column in row, print value
