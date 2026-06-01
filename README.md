@@ -1,30 +1,39 @@
-# Natural Language → Code Converter (Python/C++/Java/MATLAB)
+# Natural Language to Code Converter
 
-This is a small CLI tool that turns **very plain English** into starter code in:
+A rule based command line tool that translates simple English programming requests into starter code across Python, C++, Java, and MATLAB.
+
+This project was built to reduce basic syntax lookup for beginner programming tasks. It is not an LLM or full code assistant. Instead, it uses structured parsing and regex based intent detection to generate predictable starter code for common programming patterns.
+
+## Supported languages
+
 - Python
 - C++
 - Java
 - MATLAB
 
-It’s **rule-based** (regex patterns), so it works best for common beginner intents:
-loops, prints, variables, classes, file write, try/open file, nested loops.
+## What it can generate
 
-## Files
-- `code_generator.py` — the main program
-- `examples.txt` — example prompts you can copy/paste
-- `USER_MANUAL.md` — beginner-friendly instructions
+The converter supports common beginner programming intents, including:
 
-## Requirements
-- Python 3.9+ recommended
+- print statements
+- variables
+- loops
+- nested loops
+- classes
+- file writing
+- file opening
+- try and except blocks
+- simple reusable code templates
 
-## Run
-```bash
-python code_generator.py
-```
+## How it works
 
-Pick a language, then type prompts. Press **Enter on a blank line** to generate code.
-Type `exit` to quit.
+The tool takes a plain English prompt, detects the likely programming intent, then maps that intent to a language specific code template.
 
-## Notes
-- “Execution mode” is only implemented for **Python** inside this tool.
-  For C++/Java/MATLAB, copy the generated code into your environment and run it there.
+Example prompts:
+
+```text
+make a for loop from 1 to 10
+print hello world
+create a class called Student
+write text to a file
+open a file with error handling
